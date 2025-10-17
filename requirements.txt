@@ -1,0 +1,6 @@
+streamlit
+scikit-learn
+audio_recorder_streamlit
+whisper
+transformers
+torch
