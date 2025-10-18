@@ -78,7 +78,7 @@ with st.container():
             
             
             
-         model = whisper.load_model("base")
+         model = whisper.load_model("tiny")
          
          if Upload_file: 
            Result = model.transcribe(temp_uploadfile)
@@ -133,7 +133,7 @@ with st.container():
        #    ProgressBar.progress(i * 100 // 30) 
             
 
-         model = whisper.load_model("base")
+         model = whisper.load_model("tiny")
 
       
          if Recorder:   
