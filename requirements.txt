@@ -1,6 +1,7 @@
 streamlit
 scikit-learn
 audio_recorder_streamlit
+openai-whisper
 whisper
 transformers
 torch
