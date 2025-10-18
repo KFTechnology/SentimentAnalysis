@@ -5,3 +5,4 @@ openai-whisper
 whisper
 transformers
 torch
+ffmpeg-python
