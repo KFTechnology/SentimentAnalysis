@@ -6,3 +6,5 @@ whisper
 transformers
 torch
 ffmpeg-python
+torchaudio
+numpy

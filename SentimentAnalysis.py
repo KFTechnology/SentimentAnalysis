@@ -11,7 +11,9 @@ import torch
 torch.set_num_threads(1)
 
 
-
+@st.cache_data
+def cached  ():
+  return whisper.load_model("tiny")
 
 
 # add layout of the web page 
@@ -78,7 +80,7 @@ with st.container():
             
             
             
-         model = whisper.load_model("base")
+         model = whisper.load_model("tiny")
          
          if Upload_file: 
            Result = model.transcribe(temp_uploadfile)
@@ -133,7 +135,7 @@ with st.container():
        #    ProgressBar.progress(i * 100 // 30) 
             
 
-         model = whisper.load_model("base")
+         model = whisper.load_model("tiny")
 
       
          if Recorder:   
