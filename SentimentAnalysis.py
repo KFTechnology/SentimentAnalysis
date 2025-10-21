@@ -90,7 +90,7 @@ with st.container():
         st.image("Image/logo.png", width=120)
     with col2:
         st.markdown("<h1>AI Voice & Text Sentiment Analysis: Understanding What People Feel</h1>", unsafe_allow_html=True)
-    st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown('</div class="toolbar">', unsafe_allow_html=True)
 
 st.subheader("")
 
