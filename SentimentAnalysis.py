@@ -55,13 +55,14 @@ EMOTION_LABELS = {
 }
 
 
-
+# create a save temp file to make sure it saved for temporory and will not take a large space 
 def save_temp_file(data, suffix):
     """Save uploaded or recorded data to a temporary file."""
     with tempfile.NamedTemporaryFile(delete=False, suffix=suffix) as tmp:
         tmp.write(data)
         return tmp.name
 
+# # create a large space for the transcribe text and aanalysis the emotion so it can be suitble for streamlit cloud
 def transcribe_and_analyze(audio_path):
     """Run Whisper transcription and emotion detection."""
     try:
@@ -82,7 +83,7 @@ def transcribe_and_analyze(audio_path):
     except Exception as e:
         st.error(f"An error occurred: {e}")
 
-
+# now work with container so make sure that display correctly with what streamlit website 
 with st.container():
     st.markdown('<div class="toolbar">', unsafe_allow_html=True)
     col1, col2 = st.columns([1, 3])
@@ -93,7 +94,6 @@ with st.container():
     st.markdown('<div class="toolbar">', unsafe_allow_html=True)
 
 st.subheader("")
-
 
 with st.container():
     col_upload, spacer, col_record = st.columns([2, 0.1, 2])
