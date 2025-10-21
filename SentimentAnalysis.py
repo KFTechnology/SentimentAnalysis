@@ -46,7 +46,7 @@ def load_emotion_model():
 model = load_whisper_model()
 emotion_model = load_emotion_model()
 
-
+# place the emotion that can displayed in the streamlit cloud 
 EMOTION_LABELS = {
     "sad": "Sad 😢",
     "ang": "Angry 😠",
@@ -90,7 +90,7 @@ with st.container():
         st.image("Image/logo.png", width=120)
     with col2:
         st.markdown("<h1>AI Voice & Text Sentiment Analysis: Understanding What People Feel</h1>", unsafe_allow_html=True)
-    st.markdown('</div class="toolbar">', unsafe_allow_html=True)
+    st.markdown('<div class="toolbar">', unsafe_allow_html=True)
 
 st.subheader("")
 
